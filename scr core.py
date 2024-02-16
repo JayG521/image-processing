@@ -1,12 +1,12 @@
 ## image processing
+from PIL import Image
 
-roww = [50, 22, 22, 22, 2, 10, 7]
+rope = [50, 22, 22, 22, 2, 10, 7]
 total=0
 
-for n in roww:
+for n in rope:
     total = total + 2*n
 
-from PIL import Image
 
 ## import image
 pick = Image.open("lab-test-page.jpg")
