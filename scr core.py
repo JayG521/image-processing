@@ -1,5 +1,5 @@
 ## image processing
-import PIL
+# import PIL
 from PIL import Image
 
 '''
@@ -21,6 +21,15 @@ artPaper = [179+emulsion, 180+emulsion, 177+emulsion]
 ## import image
 pick = Image.open("lab-test-page.jpg")
 
-## print(total)
+
+## image object
+
+
+# print(total)
+pick.show()
+learntest = pick.getcolors()
+print(learntest)
+
+
 ## preview
-pick.draft("L", (pick.width // 2, pick.height // 2))
+# pick.draft("L", (pick.width // 2, pick.height // 2))
