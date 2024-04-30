@@ -25,6 +25,7 @@ pick = Image.open("lab-test-page.jpg")
 pick.effect_spread(4)
 nSize = (300, 190)
 pick = pick.resize(nSize)
+pick = pick.transpose(Image.Transpose.FLIP_TOP_BOTTOM)
 
 
 # print(total)
