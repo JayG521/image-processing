@@ -1,6 +1,6 @@
 ## image processing
 # import PIL
-from PIL import Image
+from PIL import Image, ImageEnhance, ImageFilter
 
 '''
 rope = [50, 22, 22, 22, 2, 10, 7]
@@ -27,10 +27,13 @@ nSize = (300, 190)
 pick = pick.resize(nSize)
 pick = pick.transpose(Image.Transpose.FLIP_TOP_BOTTOM)
 
+enhancer = ImageEnhance.Color(pick)
+editpick = enhancer.enhance(0.2)
 
 # print(total)
 ##outputs
 pick.show()
+editpick.show()
 
 pick.save("lab-test-page-convert-test.png")
 ## preview
